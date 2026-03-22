@@ -1,2 +1,5 @@
 server:
-  port: 1122
+  port: 1123
+  tomcat:
+    threads:
+      max: 10 # ta cho phép tối đa 10 kết nối đồng thời

@@ -13,8 +13,15 @@ public class HiController {
     @Autowired
     private EventAppService eventAppService;
 
-    @GetMapping("/v1")
+    @GetMapping("/hi")
     public String hello() {
+        return eventAppService.sayHi("Hi");
+    }
+
+    @GetMapping("/hi/v1")
+    public String sayHi() {
         return eventAppService.sayHi("Chishiya");
     }
+
+
 }
